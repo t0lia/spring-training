@@ -4,8 +4,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import spring_training.lab4.model.contact.Contact;
 
-import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @ComponentScan
@@ -13,8 +14,8 @@ import java.util.Arrays;
 public class ApplicationConfig {
 
     @Bean
-    Person person(Country country) {
-        PersonImpl person = new PersonImpl(country, Arrays.asList("Petia: +7 921 222 33 22", "Vasia: +7 921 444 11 88"));
+    Person person(Country country, List<Contact> contacts) {
+        PersonImpl person = new PersonImpl(country, contacts);
         person.setAge(22);
         person.setHeight(192.1f);
         person.setName("Ivan");

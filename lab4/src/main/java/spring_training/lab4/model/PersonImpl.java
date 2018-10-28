@@ -1,5 +1,7 @@
 package spring_training.lab4.model;
 
+import spring_training.lab4.model.contact.Contact;
+
 import java.util.List;
 
 
@@ -11,9 +13,9 @@ public class PersonImpl implements Person {
     private boolean programmer;
 
     private Country country;
-    private List<String> contacts;
+    private List<Contact> contacts;
 
-    public PersonImpl(Country country, List<String> contacts) {
+    public PersonImpl(Country country, List<Contact> contacts) {
         this.country = country;
         this.contacts = contacts;
     }
@@ -54,7 +56,7 @@ public class PersonImpl implements Person {
         return country;
     }
 
-    public List<String> getContacts() {
+    public List<Contact> getContacts() {
         return contacts;
     }
 

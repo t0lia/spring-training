@@ -1,5 +1,7 @@
 package spring_training.lab4.model;
 
+import spring_training.lab4.model.contact.Contact;
+
 import java.util.List;
 
 public interface Person {
@@ -14,5 +16,5 @@ public interface Person {
 
     Country getCountry();
 
-    List<String> getContacts();
+    List<Contact> getContacts();
 }
