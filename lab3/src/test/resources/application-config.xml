@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="country" class="spring_training.lab3.model.CountryImpl">
+        <constructor-arg name="name" value="Russia"/>
+        <constructor-arg name="codeName" value="RUS"/>
+    </bean>
+
+    <bean id="person" class="spring_training.lab3.model.PersonImpl">
+        <constructor-arg name="country" ref="country"/>
+        <constructor-arg name="contacts">
+            <util:list id="countries" value-type="java.lang.String">
+                <value>Petia: +7 921 222 33 22</value>
+                <value>Vasia: +7 921 444 11 88</value>
+            </util:list>
+        </constructor-arg>
+
+        <property name="age" value="22"/>
+        <property name="name" value="Ivan"/>
+        <property name="height" value="192.1"/>
+        <property name="programmer" value="true"/>
+
+    </bean>
+</beans>
