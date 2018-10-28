@@ -1,4 +1,4 @@
-package com.company.spring_training;
+package spring_training;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
