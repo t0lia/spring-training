@@ -3,11 +3,13 @@ package spring_training.lab4.model;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import java.util.Arrays;
 
 @Configuration
 @ComponentScan
+@PropertySource("classpath:application.properties")
 public class ApplicationConfig {
 
     @Bean

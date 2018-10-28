@@ -8,7 +8,7 @@ public class CountryImpl implements Country {
     private String name;
     private String codeName;
 
-    public CountryImpl(@Value("Russia") String name, @Value("RUS") String codeName) {
+    public CountryImpl(@Value("${country.name}") String name, @Value("${country.codeName}") String codeName) {
         this.name = name;
         this.codeName = codeName;
     }
