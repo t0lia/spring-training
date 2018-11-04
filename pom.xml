@@ -10,6 +10,7 @@
         <module>lab3</module>
         <module>lab4</module>
         <module>lab5_aop</module>
+        <module>lab6_jdbc</module>
     </modules>
     <packaging>pom</packaging>
 
