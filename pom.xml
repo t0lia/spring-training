@@ -13,6 +13,7 @@
         <module>lab6_jdbc</module>
         <module>lab7_jpa</module>
         <module>lab8_tx</module>
+        <module>lab10_mvc</module>
     </modules>
     <packaging>pom</packaging>
 
