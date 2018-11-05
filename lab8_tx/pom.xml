@@ -7,12 +7,11 @@
         <groupId>com.training</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lab7_jpa</artifactId>
+    <artifactId>lab8_tx</artifactId>
 
-    <dependencies>
+<dependencies>
         <!--Spring core-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -59,6 +58,4 @@
         </dependency>
 
     </dependencies>
-
-
 </project>

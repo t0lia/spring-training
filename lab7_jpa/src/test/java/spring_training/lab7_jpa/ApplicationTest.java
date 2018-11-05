@@ -1,7 +1,5 @@
 package spring_training.lab7_jpa;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +12,6 @@ import spring_training.lab7_jpa.model.CountryDao;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -24,9 +21,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = HibernateConfig.class)
 class ApplicationTest {
-
-    private static Logger log = LogManager.getLogger(ApplicationTest.class);
-
 
     private List<Country> persistedCountries;
 

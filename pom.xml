@@ -12,6 +12,7 @@
         <module>lab5_aop</module>
         <module>lab6_jdbc</module>
         <module>lab7_jpa</module>
+        <module>lab8_tx</module>
     </modules>
     <packaging>pom</packaging>
 
