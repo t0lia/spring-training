@@ -11,6 +11,7 @@
         <module>lab4</module>
         <module>lab5_aop</module>
         <module>lab6_jdbc</module>
+        <module>lab7_jpa</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -27,7 +28,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <mockito-core.version>2.23.0</mockito-core.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
     </properties>
